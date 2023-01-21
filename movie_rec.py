@@ -5,7 +5,7 @@ import streamlit as st
 #drive.mount('/content/drive/')
 
 #movies = pd.read_csv('/content/drive/My Drive/movie_data/movies.csv')
-movies = pd.read_csv("~/Downloads/ml-latest-small/movies.csv")
+movies = pd.read_csv("movies.csv")
     #df = pd.read_csv("~/Desktop/valenceArousalDataset.csv")
 
 movies = movies.join(movies.pop('genres').str.get_dummies('|'))
