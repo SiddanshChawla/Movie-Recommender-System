@@ -28,7 +28,7 @@ def main():
 #        st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
 
     #movies = pd.read_csv('/content/drive/My Drive/movie_data/movies.csv')
-    movies = pd.read_csv("~/Downloads/ml-latest-small/movies.csv")
+    movies = pd.read_csv("movies.csv")
         #df = pd.read_csv("~/Desktop/valenceArousalDataset.csv")
 
     movies = movies.join(movies.pop('genres').str.get_dummies('|'))
